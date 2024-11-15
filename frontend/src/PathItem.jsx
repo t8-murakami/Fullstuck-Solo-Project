@@ -1,8 +1,13 @@
-export default function TodoItem({ id, description, path, deletePath }) {
+export default function PathItem({ id, description, path, created_at, deletePath }) {
+
+  const formattedCreatedAt = new Date(created_at).toLocaleString() ;
+
     return (
       <li>
         <div>
-         <strong>{description}</strong> - {path}
+         <strong>{description}</strong> --- {path}
+         <br />
+         <small className="timestamp">作成日時: {formattedCreatedAt}</small>
         </div>
         <button
           onClick={() => deletePath(id)}

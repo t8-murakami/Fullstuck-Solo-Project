@@ -20,34 +20,34 @@
 
 2. 環境変数の設定：
    backendの.env.local
-    DB_USER=postgres
-    DB_PASSWORD=yourpassword
-    DB_NAME=path_app
-    PORT=3000
+   - DB_USER=postgres
+   - DB_PASSWORD=yourpassword
+   - DB_NAME=path_app
+   - PORT=3000
 
    frontendの.env.local
-    VITE_API_BASE_URL=/api
+   - VITE_API_BASE_URL=/api
 
 3. 必要なパッケージをインストール：
-   cd backend
-   npm install
+   - cd backend
+   - npm install
 
-   cd ../frontend
-   npm install
+   - cd ../frontend
+   - npm install
 
 4. データベースのマイグレーションを実行：
-   cd backend
-   npm run migrate
-   npm run seed
+   - cd backend
+   - npm run migrate
+   - npm run seed
 
 ### 使用方法
 1. サーバーを起動：
-   cd backend
-   npm start
+   - cd backend
+   - npm start
 
 2. フロントエンドを起動：
-   cd frontend
-   npm run dev
+   - cd frontend
+   - npm run dev
 
 3. URLにアクセス：
 　　http://localhost:5173

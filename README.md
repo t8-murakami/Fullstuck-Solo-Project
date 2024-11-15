@@ -2,6 +2,7 @@
 
 ## 概要
 このプロジェクトは、ファイルパスを登録・表示・削除できるPath 管理ツールです。
+担当システムの関連資料が散乱しており、フォルダパスを管理する必要があるため作成しました。
 
 ## 機能一覧
 - Path の登録
@@ -30,24 +31,24 @@
 
 3. 必要なパッケージをインストール：
    - cd backend
-   - npm install
+      - npm install
 
    - cd ../frontend
-   - npm install
+      - npm install
 
 4. データベースのマイグレーションを実行：
    - cd backend
-   - npm run migrate
-   - npm run seed
+      - npm run migrate
+      - npm run seed
 
 ## 使用方法
 1. サーバーを起動：
    - cd backend
-   - npm start
+      - npm start
 
 2. フロントエンドを起動：
    - cd frontend
-   - npm run dev
+      - npm run dev
 
 3. URLにアクセス：
 　　http://localhost:5173

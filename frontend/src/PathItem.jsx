@@ -5,7 +5,7 @@ export default function TodoItem({ id, description, path, deletePath }) {
          <strong>{description}</strong> - {path}
         </div>
         <button
-          onClick={() => deleteTodo(id)}
+          onClick={() => deletePath(id)}
           className="btn btn-danger"
         >
         削除

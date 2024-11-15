@@ -1,19 +1,18 @@
-import PathItem from './PathItem'
+import PathItem from './PathItem';
 
 export default function PathList({ paths, deletePath }) {
   return (
     <ul className="list">
-      {paths.length
-        ? paths.map((path) => {
-            return (
-              <PathItem
-                key={path.id}
-                {...path} // description と path を展開
-                deletePath={deletePath}
-              />
-            )
-          })
-        : 'No Paths'}
+      {/* パスが存在しない場合のメッセージ */}
+      {!paths.length && 'No Paths'}
+      {paths.length > 0 &&
+        paths.map((path) => (
+          <PathItem
+            key={path.id|| crypto.randomUUID()}
+            {...path} // description と path を展開
+            deletePath={deletePath}
+          />
+        ))}
     </ul>
-  )
+  );
 }

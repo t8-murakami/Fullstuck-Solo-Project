@@ -40,7 +40,7 @@
    - npm run migrate
    - npm run seed
 
-### 使用方法
+## 使用方法
 1. サーバーを起動：
    - cd backend
    - npm start
@@ -53,7 +53,7 @@
 　　http://localhost:5173
 
 
-### 今後の改善点
+## 今後の改善点
 - Path の編集機能の追加
 - エラーハンドリングの改善
 - UI デザインの向上
